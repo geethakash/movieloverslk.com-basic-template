@@ -1,0 +1,41 @@
+.collection {
+  &-header {
+    @apply flex w-full flex-row items-center justify-between border-yellow-500 py-3 pr-5  border-b-2 2xl:border-b-4;
+
+    &-title {
+      @apply text-2xl font-bold 2xl:text-3xl;
+    }
+    &-button {
+      @apply rounded border border-yellow-400 px-2 py-0.5 font-semibold text-yellow-500;
+    }
+  }
+
+  &-body {
+    @apply grid grid-cols-3 gap-y-5 py-5 md:grid-cols-5 lg:grid-cols-7;
+    // @apply flex flex-row py-5;
+  }
+  &-item {
+    @apply relative mx-2.5 box-border  overflow-hidden bg-slate-50;
+
+    &-image {
+      @apply h-full w-full;
+
+      & img {
+        @apply aspect-[2,3] h-full w-full align-top transition-all duration-300 group-hover:scale-110;
+      }
+    }
+    &-body {
+      @apply absolute bottom-0 left-0 flex flex h-[20%] w-full flex-col flex-col items-center justify-center bg-black bg-opacity-80 px-2 transition-all duration-300 group-hover:m-auto group-hover:h-full   group-hover:bg-opacity-80;
+
+      &-inner {
+        @apply flex h-full w-full flex-col items-center justify-center;
+      }
+    }
+    &-title {
+      @apply w-11/12 truncate text-center text-lg font-bold transition-all duration-300 hover:text-yellow-500 group-hover:text-2xl;
+    }
+    &-subtitle {
+      @apply flex flex-row items-center;
+    }
+  }
+}
