@@ -1,15 +1,14 @@
-
 .header-title {
-    font-family: 'Acme', sans-serif;
-  }
-  .navbar-brand {
-    font-family: 'Acme', sans-serif;
-  }
-  
-  .nav-link {
-    @apply ml-10 font-light;
-  }
-  
-  .nav-link-other {
-    @apply rounded-full bg-yellow-500 border border-yellow-500 hover:bg-transparent hover:text-yellow-500 duration-300 transition-all  px-2 py-1 text-black font-semibold;
-  }
+  font-family: 'Acme', sans-serif;
+}
+.navbar-brand {
+  font-family: 'Acme', sans-serif;
+}
+
+.nav-link {
+  @apply ml-10 font-light;
+}
+
+.nav-link-other {
+  @apply rounded-full border border-yellow-500 bg-yellow-500 px-2 py-1 font-semibold text-black  transition-all duration-300 hover:bg-transparent hover:text-yellow-500;
+}

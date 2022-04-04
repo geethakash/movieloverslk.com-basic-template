@@ -1,12 +1,12 @@
 .collection {
   &-header {
-    @apply flex w-full flex-row items-center justify-between border-yellow-500 py-3 pr-5  border-b-2 2xl:border-b-4;
+    @apply flex w-full flex-row items-center justify-between border-b-2 border-yellow-500 py-3  pr-5 2xl:border-b-4;
 
     &-title {
       @apply text-2xl font-bold 2xl:text-3xl;
     }
     &-button {
-      @apply rounded border border-yellow-400 px-2 py-0.5 font-semibold text-yellow-500;
+      @apply rounded border border-yellow-400 px-2 py-0.5 text-xs font-semibold text-yellow-500 lg:text-base;
     }
   }
 
@@ -25,17 +25,125 @@
       }
     }
     &-body {
-      @apply absolute bottom-0 left-0 flex flex h-[20%] w-full flex-col flex-col items-center justify-center bg-black bg-opacity-80 px-2 transition-all duration-300 group-hover:m-auto group-hover:h-full   group-hover:bg-opacity-80;
+      @apply absolute bottom-0 left-0  flex h-[20%] w-full flex-col items-center justify-center bg-black bg-opacity-80 px-2 transition-all duration-300 group-hover:m-auto group-hover:h-full   group-hover:bg-opacity-80;
 
       &-inner {
         @apply flex h-full w-full flex-col items-center justify-center;
       }
     }
     &-title {
-      @apply w-11/12 truncate text-center text-lg font-bold transition-all duration-300 hover:text-yellow-500 group-hover:text-2xl;
+      @apply w-11/12 truncate text-center text-sm font-bold transition-all duration-300 hover:text-yellow-500 group-hover:text-ellipsis group-hover:whitespace-normal  lg:text-lg lg:group-hover:text-2xl;
     }
     &-subtitle {
-      @apply flex flex-row items-center;
+      @apply hidden flex-row items-center text-xs transition-all duration-300 group-hover:flex lg:flex lg:text-sm lg:group-hover:text-base;
     }
+  }
+}
+
+.footer {
+  @apply text-slate-300;
+}
+
+.pre-loader {
+  @apply pointer-events-none duration-300 transition-all fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-80 backdrop-blur-xl;
+  &-text {
+    @apply text-center  font-['Acme'] text-4xl text-white;
+  }
+  &-logo {
+    // animation: fill 1s ease forwards 5s;
+    // animation: fill-reverse 5s ease infinite 6s;
+    @apply h-auto w-1/2  md:w-1/3;
+
+    & path:nth-child(1) {
+      stroke-dasharray: 657;
+      stroke-dashoffset: 657;
+      animation: line-anim 1.5s ease forwards;
+    }
+    & path:nth-child(2) {
+      stroke-dasharray: 328;
+      stroke-dashoffset: 328;
+      animation: line-anim 1.5s ease forwards 0.3s;
+    }
+    & path:nth-child(3) {
+      stroke-dasharray: 319;
+      stroke-dashoffset: 319;
+      animation: line-anim 1.5s ease forwards 0.6s;
+    }
+    & path:nth-child(4) {
+      stroke-dasharray: 248;
+      stroke-dashoffset: 248;
+      animation: line-anim 1.5s ease forwards 0.9s;
+    }
+    & path:nth-child(5) {
+      stroke-dasharray: 357;
+      stroke-dashoffset: 357;
+      animation: line-anim 1.5s ease forwards 1.2s;
+    }
+    & path:nth-child(6) {
+      stroke-dasharray: 294;
+      stroke-dashoffset: 294;
+      animation: line-anim 1.5s ease forwards 1.5s;
+    }
+    & path:nth-child(7) {
+      stroke-dasharray: 328;
+      stroke-dashoffset: 328;
+      animation: line-anim 1.5s ease forwards 1.8s;
+    }
+    & path:nth-child(8) {
+      stroke-dasharray: 319;
+      stroke-dashoffset: 319;
+      animation: line-anim 1.5s ease forwards 2.1s;
+    }
+    & path:nth-child(9) {
+      stroke-dasharray: 358;
+      stroke-dashoffset: 358;
+      animation: line-anim 1.5s ease forwards 2.4s;
+    }
+    & path:nth-child(10) {
+      stroke-dasharray: 245;
+      stroke-dashoffset: 245;
+      animation: line-anim 1.5s ease forwards 2.7s;
+    }
+    & path:nth-child(11) {
+      stroke-dasharray: 318;
+      stroke-dashoffset: 318;
+      animation: line-anim 1.5s ease forwards 3s;
+    }
+    & path:nth-child(12) {
+      stroke-dasharray: 253;
+      stroke-dashoffset: 253;
+      animation: line-anim 1.5s ease forwards 3.3s;
+    }
+    & path:nth-child(13) {
+      stroke-dasharray: 449;
+      stroke-dashoffset: 449;
+      animation: line-anim 1.5s ease forwards 3.6s;
+    }
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c4c4c4;
+  }
+}
+@keyframes fill-reverse {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: #c4c4c4;
+  }
+  100% {
+    fill: transparent;
   }
 }

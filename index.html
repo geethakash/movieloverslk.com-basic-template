@@ -10,13 +10,13 @@
   <body class="bg-black">
     <!-- bg-[url('/images/hero-area.png')] -->
     <header
-      class="relative h-auto bg-[url('/images/hero-area.png')] bg-cover bg-fixed bg-top bg-no-repeat"
+      class="relative h-auto bg-[url('/images/hero-area.webp')] bg-cover bg-fixed bg-top bg-no-repeat"
     >
       <div
         class="to-transaparent h-full w-full flex-col bg-gradient-to-tl from-black text-slate-400"
       >
         <div
-          class="navbar z-10 w-full bg-opacity-60 px-5 py-5 backdrop-blur-xl transition-all duration-300 lg:fixed lg:py-10 lg:px-20 2xl:text-xl"
+          class="navbar z-10 w-full bg-opacity-60 px-5 py-5  transition-all duration-300 lg:fixed lg:py-10 lg:px-20 2xl:text-xl"
         >
           <nav class="flex flex-row items-center justify-between">
             <div class="navbar-brand text-2xl text-gray-300">MovieLovers</div>
@@ -53,24 +53,12 @@
                 </button>
               </form>
 
-              <div class="nav-link">
-                <a href="#">Movies</a>
-              </div>
-              <div class="nav-link">
-                <a href="#">TV Shows</a>
-              </div>
-              <div class="nav-link">
-                <a href="#">Collections</a>
-              </div>
-              <div class="nav-link">
-                <a href="#">Genre</a>
-              </div>
-              <div class="nav-link">
-                <a href="#">Blog</a>
-              </div>
-              <div class="nav-link nav-link-other">
-                <a href="#">Find Movie</a>
-              </div>
+              <a class="nav-link" href="#">Movies</a>
+              <a class="nav-link" href="#">TV Shows</a>
+              <a class="nav-link" href="#">Collections</a>
+              <a class="nav-link" href="#">Genre</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link nav-link-other" href="#">Find Movie</a>
             </div>
             <button class="btn btn-primary ml-5 block lg:hidden">
               <svg
@@ -111,7 +99,7 @@
               <div class="pt-10 pl-5 text-slate-300 md:w-2/3">
                 <a
                   href="#"
-                  class="text-3xl font-semibold hover:text-yellow-500 2xl:text-4xl"
+                  class="truncate text-3xl font-semibold hover:text-yellow-500 2xl:text-4xl"
                   >The Batman 2022</a
                 >
                 <span class="mt-5 flex flex-row text-xl">
@@ -131,11 +119,14 @@
                   </svg>
                   IMDB : 8.3
                 </span>
-                <p class="mt-2 w-4/5 2xl:text-lg">
-                  When the Riddler, a sadistic serial killer, begins murdering
-                  key political figures in Gotham, Batman is forced to
-                  investigate the city's hidden corruption and question his
-                  family's invol...
+                <p class="mt-2 w-11/12 line-clamp-3 lg:w-4/5 2xl:text-lg">
+                  Batman ventures into Gotham City's underworld when a sadistic
+                  killer leaves behind a trail of cryptic clues. As the evidence
+                  begins to lead closer to home and the scale of the
+                  perpetrator's plans become clear, he must forge new
+                  relationships, unmask the culprit and bring justice to the
+                  abuse of power and corruption that has long plagued the
+                  metropolis.
                 </p>
                 <div class="my-5">
                   <button class="genre">Action</button>
@@ -169,7 +160,7 @@
               <div class="collection-item-title">
                 <a href="#">The Batman</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2022)</span>
               </div>
             </div>
@@ -187,7 +178,7 @@
               <div class="collection-item-title">
                 <a href="#">Deep Water</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2022)</span>
               </div>
             </div>
@@ -205,7 +196,7 @@
               <h3 class="collection-item-title">
                 <a href="#">Turning Red</a>
               </h3>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <p class="pr-1">(2022)</p>
               </div>
             </div>
@@ -223,7 +214,7 @@
               <div class="collection-item-title">
                 <a href="#">Windfall</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2022)</span>
               </div>
             </div>
@@ -241,7 +232,7 @@
               <div class="collection-item-title">
                 <a href="#">On Your Wedding Day</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2022)</span>
               </div>
             </div>
@@ -269,7 +260,7 @@
               <div class="collection-item-title">
                 <a href="#">Game Of Thrones</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2011 - 2019)</span>
               </div>
             </div>
@@ -287,7 +278,7 @@
               <div class="collection-item-title">
                 <a href="#">Supernatural</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2005 - 2020)</span>
               </div>
             </div>
@@ -305,8 +296,8 @@
               <h3 class="collection-item-title">
                 <a href="#">Secrets in the Lattice </a>
               </h3>
-              <div class="movie-item-subtitle">
-                <p class="pr-1">(2021)</p>
+              <div class="collection-item-subtitle">
+                <p class="">(2021)</p>
               </div>
             </div>
           </div>
@@ -323,7 +314,7 @@
               <div class="collection-item-title">
                 <a href="#">Dark</a>
               </div>
-              <div class="movie-item-subtitle">
+              <div class="collection-item-subtitle">
                 <span class="pr-1">(2017 - 2020)</span>
               </div>
             </div>
@@ -331,27 +322,115 @@
         </div>
       </div>
     </main>
-    <footer class="flex flex-col items-center justify-center text-white">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img
-            class="w-full"
-            src="https://m.media-amazon.com/images/G/01/IMDb/brand/imdb_logo_desktop_teal_en_US_1x._CB485908742_.png"
-            alt="IMDb Logo"
-          />
-        </div>
-        <div class="footer-links">
-          <a href="#">Blog</a>
-          <a href="#">Find Movie</a>
-          <a href="#">Help</a>
-          <a href="#">Contact Us</a>
-          <a href="#"></a>
-        </div>
-        <div class="footer-copyright">
-          <p>© 2022 MovieLoverslk All rights reserved.</p>
-        </div>
+    <footer class="footer">
+      <div class="footer-main">
+        <h3 class="footer-main-logo">MovieLovers</h3>
+        <p class="footer-main-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          quisquam.
+        </p>
+        <div class="footer-main-social"></div>
       </div>
     </footer>
+    <div class="pre-loader">
+      <svg
+        id="pre-loader-logo"
+        class="pre-loader-logo"
+        width="811"
+        height="122"
+        viewBox="0 0 811 122"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M48.4452 70.6711H49.8697L70.6664 16.6559L90.3236 17.2245L90.8934 78.3469L93.5998 115.02H74.3699L75.0822 78.0626L73.5153 40.6784L56.4221 87.7285L38.9015 88.5813L22.9479 40.6784L21.6659 78.0626L22.663 115.02H5L6.99421 80.4791L7.84887 19.4988L30.4974 15.9452L48.4452 70.6711Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M106.145 85.312C106.145 73.1823 109.421 62.9005 115.973 54.4665C122.526 46.0326 130.17 41.8156 138.907 41.8156C147.738 41.8156 154.576 44.6585 159.419 50.3443C164.357 56.0301 166.826 63.5638 166.826 72.9454C166.826 85.4541 163.644 95.8781 157.282 104.217C151.015 112.462 143.085 116.584 133.494 116.584C125.612 116.584 119.06 113.646 113.837 107.771C108.709 101.801 106.145 94.3145 106.145 85.312ZM150.872 80.3369C150.872 66.5962 146.171 59.7259 136.77 59.7259C126.989 59.7259 122.099 66.1698 122.099 79.0576C122.099 85.7858 123.475 91.0452 126.229 94.8357C128.983 98.6263 132.592 100.522 137.055 100.522C141.613 100.522 145.032 98.8158 147.311 95.4043C149.685 91.8981 150.872 86.8756 150.872 80.3369Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M203.351 97.2522H205.203L209.904 77.7783L217.596 42.6685L235.259 44.8006L224.575 80.0526L215.601 113.315L191.244 115.447L182.839 80.9055L172.584 46.3642L191.956 42.8106L198.081 74.0825L203.351 97.2522Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M263.742 42.6685L262.032 78.0626L263.599 111.467L244.512 115.02L246.221 80.4791L244.654 46.2221L263.742 42.6685ZM243.657 21.9153C243.657 18.6933 244.892 15.8504 247.361 13.3866C249.83 10.828 252.679 9.54865 255.907 9.54865C259.136 9.54865 261.605 10.4489 263.314 12.2494C265.024 13.9551 265.878 16.5611 265.878 20.0674C265.878 23.5736 264.644 26.6061 262.175 29.1647C259.801 31.6285 256.999 32.8605 253.771 32.8605C250.637 32.8605 248.168 31.8181 246.364 29.7333C244.559 27.6485 243.657 25.0425 243.657 21.9153Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M305.07 100.522C307.824 100.522 310.721 99.8108 313.759 98.3893C316.798 96.9679 319.172 95.5464 320.882 94.125L323.446 91.9928L329.998 99.953C329.048 101.564 327.576 103.412 325.582 105.497C323.588 107.581 321.546 109.382 319.457 110.898C317.463 112.32 314.757 113.646 311.338 114.878C308.014 116.015 304.548 116.584 300.94 116.584C293.248 116.584 286.98 113.694 282.137 107.913C277.294 102.038 274.872 94.5041 274.872 85.312C274.872 73.7509 278.244 63.6112 284.986 54.8929C291.728 46.1747 299.61 41.8156 308.631 41.8156C315.564 41.8156 320.929 43.7582 324.728 47.6435C328.621 51.5288 330.568 56.9777 330.568 63.9902C330.568 68.1598 329.856 72.898 328.431 78.2047L325.582 81.1898L289.971 84.4591C291.586 95.1674 296.619 100.522 305.07 100.522ZM305.07 56.4565C300.892 56.4565 297.378 58.1623 294.53 61.5738C291.681 64.8905 290.019 69.1548 289.544 74.3668L313.759 71.3818C314.044 69.2022 314.187 67.4017 314.187 65.9803C314.187 59.6311 311.148 56.4565 305.07 56.4565Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M346.135 115.02L347.845 80.4791L346.135 19.7831L366.362 16.2295L364.368 78.0626L365.365 101.09L394.566 98.8158L392.999 115.02H346.135Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M399.378 85.312C399.378 73.1823 402.654 62.9005 409.207 54.4665C415.759 46.0326 423.403 41.8156 432.14 41.8156C440.971 41.8156 447.809 44.6585 452.652 50.3443C457.59 56.0301 460.059 63.5638 460.059 72.9454C460.059 85.4541 456.878 95.8781 450.515 104.217C444.248 112.462 436.318 116.584 426.727 116.584C418.845 116.584 412.293 113.646 407.07 107.771C401.942 101.801 399.378 94.3145 399.378 85.312ZM444.105 80.3369C444.105 66.5962 439.405 59.7259 430.003 59.7259C420.222 59.7259 415.332 66.1698 415.332 79.0576C415.332 85.7858 416.709 91.0452 419.462 94.8357C422.216 98.6263 425.825 100.522 430.288 100.522C434.846 100.522 438.265 98.8158 440.544 95.4043C442.918 91.8981 444.105 86.8756 444.105 80.3369Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M496.584 97.2522H498.436L503.137 77.7783L510.829 42.6685L528.492 44.8006L517.809 80.0526L508.835 113.315L484.477 115.447L476.073 80.9055L465.817 46.3642L485.189 42.8106L491.314 74.0825L496.584 97.2522Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M563.527 100.522C566.281 100.522 569.178 99.8108 572.216 98.3893C575.255 96.9679 577.629 95.5464 579.338 94.125L581.902 91.9928L588.455 99.953C587.505 101.564 586.033 103.412 584.039 105.497C582.045 107.581 580.003 109.382 577.914 110.898C575.92 112.32 573.213 113.646 569.795 114.878C566.471 116.015 563.005 116.584 559.396 116.584C551.704 116.584 545.437 113.694 540.594 107.913C535.751 102.038 533.329 94.5041 533.329 85.312C533.329 73.7509 536.7 63.6112 543.443 54.8929C550.185 46.1747 558.067 41.8156 567.088 41.8156C574.021 41.8156 579.386 43.7582 583.185 47.6435C587.078 51.5288 589.025 56.9777 589.025 63.9902C589.025 68.1598 588.312 72.898 586.888 78.2047L584.039 81.1898L548.428 84.4591C550.043 95.1674 555.076 100.522 563.527 100.522ZM563.527 56.4565C559.349 56.4565 555.835 58.1623 552.986 61.5738C550.138 64.8905 548.476 69.1548 548.001 74.3668L572.216 71.3818C572.501 69.2022 572.644 67.4017 572.644 65.9803C572.644 59.6311 569.605 56.4565 563.527 56.4565Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M599.892 46.3642L617.127 42.6685C617.982 49.9652 618.552 56.883 618.837 63.4216C627.478 50.06 635.597 43.3792 643.194 43.3792L641.627 65.5538C636.12 65.5538 631.751 66.075 628.523 67.1174C625.389 68.0651 622.16 70.0077 618.837 72.9454V78.0626L620.403 111.467L601.316 115.02L603.025 80.4791C602.645 67.7808 601.601 56.4092 599.892 46.3642Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M673.741 101.801C678.679 101.801 681.148 99.6213 681.148 95.2622C681.148 93.7459 680.056 92.3245 677.872 90.9978C675.782 89.6711 673.171 88.3444 670.037 87.0177C666.998 85.6911 663.912 84.2222 660.778 82.6112C657.74 80.9055 655.128 78.5838 652.944 75.6461C650.855 72.7085 649.81 69.3444 649.81 65.5538C649.81 59.2047 652.612 53.661 658.214 48.9228C663.817 44.1847 670.275 41.8156 677.587 41.8156C681.005 41.8156 684.329 42.242 687.558 43.0949C690.881 43.853 694.063 45.0849 697.101 46.7907L687.558 64.1324C686.893 63.5638 686.038 62.8531 684.994 62.0002C683.949 61.1473 681.955 60.0575 679.011 58.7309C676.162 57.3094 673.598 56.5987 671.319 56.5987C669.135 56.5987 667.426 57.1199 666.191 58.1623C665.052 59.1099 664.482 60.484 664.482 62.2845C664.482 63.9902 666.096 65.7434 669.325 67.5439C672.649 69.2496 676.257 70.8606 680.151 72.3768C684.044 73.7982 687.605 76.2147 690.834 79.6262C694.158 82.9429 695.819 86.923 695.819 91.5664C695.819 98.1998 693.066 104.028 687.558 109.05C682.145 114.073 675.877 116.584 668.755 116.584C664.197 116.584 659.924 115.589 655.935 113.599C652.042 111.609 649.24 109.619 647.531 107.629L644.967 104.644L656.22 91.5664C656.79 92.3245 657.597 93.2721 658.642 94.4093C659.686 95.5465 661.728 97.0627 664.767 98.9579C667.901 100.853 670.892 101.801 673.741 101.801Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M727.806 5L725.954 78.0626L727.521 111.467L708.291 115.02L710 80.4791L708.291 8.55363L727.806 5Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+        <path
+          d="M788.761 116.442L761.982 77.0676V78.0626L763.549 111.467L744.319 115.02L746.028 80.4791L744.319 8.55363L763.834 5L761.982 73.6561L790.471 42.5263L803.861 51.6236L778.933 74.9354L805 105.639L788.761 116.442Z"
+          stroke="#C4C4C4"
+          stroke-width="4"
+          mask="url(#path-1-outside-1_505_493)"
+        />
+      </svg>
+    </div>
     <script type="module" src="/js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const preLoader = document.querySelector('.pre-loader');
+        preLoader.classList.add('opacity-0');
+        setTimeout(() => {
+          preLoader.classList.add('hidden');
+        }, 1000);
+      });
+    </script>
   </body>
 </html>

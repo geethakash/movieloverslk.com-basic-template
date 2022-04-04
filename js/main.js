@@ -11,3 +11,4 @@ document.addEventListener('scroll', () => {
     navbar.classList.add('lg:py-10');
   }
 });
+
