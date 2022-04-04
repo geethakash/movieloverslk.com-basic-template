@@ -16,7 +16,7 @@
         class="to-transaparent h-full w-full flex-col bg-gradient-to-tl from-black text-slate-400"
       >
         <div
-          class="navbar z-10 w-full bg-opacity-60 px-5 py-5  transition-all duration-300 lg:fixed lg:py-10 lg:px-20 2xl:text-xl"
+          class="navbar z-10 w-full bg-opacity-60 px-5 py-5 transition-all duration-300 lg:fixed lg:py-10 lg:px-20 2xl:text-xl"
         >
           <nav class="flex flex-row items-center justify-between">
             <div class="navbar-brand text-2xl text-gray-300">MovieLovers</div>
@@ -424,13 +424,14 @@
     </div>
     <script type="module" src="/js/main.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(() => {
         const preLoader = document.querySelector('.pre-loader');
         preLoader.classList.add('opacity-0');
         setTimeout(() => {
           preLoader.classList.add('hidden');
         }, 1000);
-      });
+      }, 5000);
+      // document.addEventListener('DOMContentLoaded', function () {});
     </script>
   </body>
 </html>
